@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding: 10px; /* Reduced padding for a smaller height */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixes the search bar at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the search bar stays on top */
+    background-color: white;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    max-width: 400px; /* Reduced max-width for a narrower search bar */
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px; /* Reduced padding for a smaller height */
+    border: 2px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px; /* Smaller font size for a more compact look */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007BFF;
+}
+
+.search-button {
+    padding: 8px 16px; /* Reduced padding for a smaller button */
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size for the button */
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: lightgreen;
+}
+
+body {
+    padding-top: 60px; /* Adjusted padding to account for the smaller search bar height */
+}

@@ -1,0 +1,37 @@
+products1
+
+id	int	NO	PRI		auto_increment
+pro_id	int	YES			
+name	varchar(100)	YES			
+price	decimal(10,0)	YES			
+description	text	YES			
+images	varchar(30)	YES			
+
+products
+
+id	int	NO	PRI		auto_increment
+name	varchar(100)	YES			
+price	decimal(10,2)	YES			
+description	text	YES			
+images	varchar(30)	YES	
+
+cart 
+id	int	NO	PRI		auto_increment
+product_id	int	YES			
+quantity	int	YES					
+
+users
+
+id	int	NO	PRI		auto_increment
+username	varchar(50)	NO			
+password	varchar(50)	NO			
+email	varchar(30)	YES			
+phone	int	YES			
+	
+
+remove the foreign key
+
+select * from INFORMATION_SCHEMA.TABLE_CONSTRAINTS where CONSTRAINT_TYPE = 'FOREIGN KEY';
+
+alter table cart drop foreign key cart_ibfk_1;
+
